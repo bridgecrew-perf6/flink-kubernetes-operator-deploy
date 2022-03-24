@@ -42,7 +42,7 @@ jobServiceAccount:
   name: "flink"
 
 webhook:
-  create: true
+  create: false
   keystore:
     useDefaultPassword: true
   # passwordSecretRef:
