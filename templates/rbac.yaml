@@ -38,6 +38,7 @@ rules:
       - configmaps
       - secrets
       - nodes
+      - serviceaccounts
     verbs:
       - "*"
   - apiGroups:
