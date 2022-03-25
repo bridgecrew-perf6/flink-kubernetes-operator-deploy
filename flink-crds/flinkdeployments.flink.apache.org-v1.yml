@@ -27,7 +27,6 @@ spec:
                 type: string
               flinkVersion:
                 enum:
-                - v1_12
                 - v1_14
                 - v1_15
                 - v1_16
