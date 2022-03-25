@@ -78,3 +78,5 @@ metrics:
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
+watchNamespaces: 
+  - flink
