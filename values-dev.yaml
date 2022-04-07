@@ -97,8 +97,6 @@ nameOverride: ""
 fullnameOverride: ""
 watchNamespaces: 
   - flink
-  - flink-operator
-
 # Set the jvm start up options for webhook and operator
 jvmArgs:
   webhook: ""
