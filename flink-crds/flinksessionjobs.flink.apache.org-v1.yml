@@ -13,7 +13,7 @@ spec:
     singular: flinksessionjob
   scope: Namespaced
   versions:
-  - name: v1alpha1
+  - name: v1beta1
     schema:
       openAPIV3Schema:
         properties:
@@ -86,38 +86,7 @@ spec:
                   error:
                     type: string
                   lastReconciledSpec:
-                    properties:
-                      clusterId:
-                        type: string
-                      job:
-                        properties:
-                          jarURI:
-                            type: string
-                          parallelism:
-                            type: integer
-                          entryClass:
-                            type: string
-                          args:
-                            items:
-                              type: string
-                            type: array
-                          state:
-                            enum:
-                            - running
-                            - suspended
-                            type: string
-                          savepointTriggerNonce:
-                            type: integer
-                          initialSavepointPath:
-                            type: string
-                          upgradeMode:
-                            enum:
-                            - savepoint
-                            - last-state
-                            - stateless
-                            type: string
-                        type: object
-                    type: object
+                    type: string
                 type: object
             type: object
         type: object
