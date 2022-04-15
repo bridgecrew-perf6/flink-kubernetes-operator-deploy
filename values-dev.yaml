@@ -65,6 +65,7 @@ webhook:
   #   name: jks-password-secret
   #   key: password-key
 
+#TODO: Work on configuration OperatorConfigOptions
 operatorConfiguration:
   create: true
   # Set append to false to replace configuration files
@@ -75,6 +76,8 @@ operatorConfiguration:
 
     operator.reconciler.reschedule.interval: 15 s
     operator.observer.progress-check.interval: 5 s
+    operator.observer.flink.client.timeout: 120 s
+    operator.reconciler.flink.cancel.job.timeout: 120 s
   # log4j2.properties: |+
   #   rootLogger.level = DEBUG
 
